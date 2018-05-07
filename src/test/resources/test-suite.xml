@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LibraryTests">
+
+	<test name="LibraryLoginTest">
+		<classes>
+			<class name="by.htp.librarytest.LibraryLoginTest" />
+		</classes>
+	</test>
+	<test name="LibraryBookListTest">
+		<classes>
+			<class name="by.htp.librarytest.LibraryBookListTest" />
+		</classes>
+	</test>
+	<test name="LibraryBookFindTest">
+		<classes>
+			<class name="by.htp.librarytest.LibraryBookFindTest" />
+		</classes>
+	</test>
+	<test name="LibraryOrderTest">
+		<classes>
+			<class name="by.htp.librarytest.LibraryOrderTest" />
+		</classes>
+	</test>
+	<test name="LibraryEmployeeOrdersTest">
+		<classes>
+			<class name="by.htp.librarytest.LibraryEmployeeOrdersTest" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="by.htp.librarytest.listener.ScreenshotOnFailListener" />
+	</listeners>
+
+</suite>
